@@ -339,7 +339,7 @@ public class CekCuacaFrame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Error saving data to CSV.");
         }
     }
-
+//Untuk memuat data cuaca
  private void loadWeatherData() {
         try (BufferedReader reader = new BufferedReader(new FileReader("weather_data.csv"))) {
             String line;
