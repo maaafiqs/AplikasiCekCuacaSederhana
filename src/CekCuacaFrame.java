@@ -215,7 +215,7 @@ public class CekCuacaFrame extends javax.swing.JFrame {
                 if (!city.isEmpty()) {
                     fetchWeatherData(city);
                 } else {
-                    JOptionPane.showMessageDialog(null, "Please enter a city name.");
+                    JOptionPane.showMessageDialog(null, "Please enter a city name."); //Button untuk mengecek cuaca
                 }
             }
         });
