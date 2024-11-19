@@ -328,7 +328,7 @@ public class CekCuacaFrame extends javax.swing.JFrame {
             iconLabel.setIcon(null);
         }
     }
-
+//menyimpan data cuaca
  private void saveWeatherData() {
         try (FileWriter writer = new FileWriter("weather_data.csv", true)) {
             String city = kotaTextField.getText();
