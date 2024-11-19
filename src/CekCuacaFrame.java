@@ -288,9 +288,9 @@ public class CekCuacaFrame extends javax.swing.JFrame {
     private javax.swing.JButton simpanCSVButton;
     private javax.swing.JButton ulangButton;
     // End of variables declaration//GEN-END:variables
- private void fetchWeatherData(String city) {
+ private void fetchWeatherData(String city) { // Membuat method untuk mengecek laporan cuaca
         try {
-            String apiKey = "YOUR_API_KEY";
+            String apiKey = "YOUR_API_KEY"; //API Key
             String urlString = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey + "&units=metric";
             URL url = new URL(urlString);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -303,7 +303,7 @@ public class CekCuacaFrame extends javax.swing.JFrame {
             }
             scanner.close();
 
-            // Parse JSON response
+            // mengambil respon JSON
             JSONObject json = new JSONObject(data.toString());
             JSONObject main = json.getJSONObject("main");
             double temp = main.getDouble("temp");
