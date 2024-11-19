@@ -318,7 +318,7 @@ public class CekCuacaFrame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Gagal mengecek cuaca, silahkan cek kembali internet anda!");
         }
     }
- 
+ //Membuat icon cuaca
  private void setWeatherIcon(String iconCode) {
         try {
             URL iconUrl = new URL("http://openweathermap.org/img/wn/" + iconCode + "@2x.png");
