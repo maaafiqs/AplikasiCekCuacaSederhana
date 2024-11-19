@@ -312,7 +312,7 @@ public class CekCuacaFrame extends javax.swing.JFrame {
             }
             scanner.close();
 
-            // mengambil respon JSON
+            // mengambil respon JSON dan memuat data yang akan ditampilkan
             JSONObject json = new JSONObject(data.toString());
             JSONObject main = json.getJSONObject("main");
             double temp = main.getDouble("temp");
