@@ -97,6 +97,11 @@ public class CekCuacaFrame extends javax.swing.JFrame {
         simpanButton.setText("Simpan ke Favorit");
 
         simpanCSVButton.setText("Simpan ke CSV");
+        simpanCSVButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                simpanCSVButtonActionPerformed(evt);
+            }
+        });
 
         muatDataButton.setText("Muat Data");
 
@@ -225,6 +230,10 @@ public class CekCuacaFrame extends javax.swing.JFrame {
        kotaTextField.setText("");
        cuacaLabel.setText("");
     }//GEN-LAST:event_ulangButtonActionPerformed
+
+    private void simpanCSVButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simpanCSVButtonActionPerformed
+        // Button untuk simpan ke CSV
+    }//GEN-LAST:event_simpanCSVButtonActionPerformed
 
     /**
      * @param args the command line arguments
