@@ -95,6 +95,11 @@ public class CekCuacaFrame extends javax.swing.JFrame {
         });
 
         simpanButton.setText("Simpan ke Favorit");
+        simpanButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                simpanButtonActionPerformed(evt);
+            }
+        });
 
         simpanCSVButton.setText("Simpan ke CSV");
         simpanCSVButton.addActionListener(new java.awt.event.ActionListener() {
@@ -234,6 +239,10 @@ public class CekCuacaFrame extends javax.swing.JFrame {
     private void simpanCSVButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simpanCSVButtonActionPerformed
         // Button untuk simpan ke CSV
     }//GEN-LAST:event_simpanCSVButtonActionPerformed
+
+    private void simpanButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simpanButtonActionPerformed
+        // Button untuk simpan data cuaca ke favorit
+    }//GEN-LAST:event_simpanButtonActionPerformed
 
     /**
      * @param args the command line arguments
